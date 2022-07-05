@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./commons.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./commons.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="content">
+            <video id="video" muted autoplay loop>
+                <source src="./img/bg_01.mp4">
+            </video>
+            <div class="inner">
+                <h1 class="logo"> <img src="./img/logo.svg" alt="로고"></h1>
+                <div class="pc_menu">
+                    <img class="clock" src="./img/top_icon_01.png" alt="시계">
+                    <span>오전 09&#58;30 &#45; 오후 19&#58;00</span>
+                    <a href="#">KR</a>
+                    <a href="#">EN</a>
+                    <a href="#">로그인</a>
+                </div>
+                <ul class="gnb">
+                    <div class="mb_menu">
+                        <div class="mb_logo"><img src="./img/logo_menu.svg" alt="모바일로고"></div>
+                        <a href="#">
+                            <img src="./img/menu_icon_01.png" alt="티켓구매">
+                            <span>티켓구매</span>
+                        </a>
+                        <a href="#">
+                            <img src="./img/menu_icon_02.png" alt="로그인">
+                            <span>로그인</span>
+                        </a>
+                    </div>
+                    <li>
+                        <a href="#">이용안내</a>
+                        <ul class="sub">
+                            <li><a href="#">이용시간&middot;요금안내</a></li>
+                            <li><a href="#">가이드맵</a></li>
+                            <li><a href="#">온라인 입장권</a></li>
+                            <li><a href="#">온라인 기프트샵</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">프로그램</a>
+                        <ul class="sub">
+                            <li><a href="#">전체 프로그램</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">혜택안내</a>
+                        <ul class="sub">
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">제휴할인</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">단체안내</a>
+                        <ul class="sub">
+                            <li><a href="#">학습&middot;일반단체</a></li>
+                            <li><a href="#">인바운드단체</a></li>
+                            <li><a href="#">기업단체&#40;제휴&#41;</a></li>
+                            <li><a href="#">단체식사안내</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">아쿠아플라넷</a>
+                        <ul class="sub">
+                            <li><a href="#">아쿠아플라넷 여수</a></li>
+                            <li><a href="#">아쿠아플라넷 친구들</a></li>
+                            <li><a href="#">해양생물연구센터</a></li>
+                            <li><a href="#">바다거북 종보전연구</a></li>
+                            <li><a href="#">아쿠아리스트</a></li>
+                            <li><a href="#">오시는 길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">고객의소리</a>
+                        <ul class="sub">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">전자공고</a></li>
+                            <li><a href="#">자주 묻는 질문</a></li>
+                            <li><a href="#">고객소리함</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="ham">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="hd_txt">
+                    <p>해양문화의 가치와 생태계를 보존하며<br>인간과 자연이 공생하는</p>
+                    <h2>아쿠아플라넷 여수</h2>
+                </div>
+                <ul class="mb_nav">
+                    <li>
+                        <a href="#">
+                            <img src="./img/top_nav_icon_01.png" alt="이용안내">
+                            <span>이용안내</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/top_nav_icon_02.png" alt="티켓구매">
+                            <span>티켓구매</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/top_nav_icon_03.png" alt="오시는 길">
+                            <span>오시는 길</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/top_nav_icon_04.png" alt="프로그램">
+                            <span>프로그램</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <section class="sec1 content">
+            <div class="inner">
+                <div class="info">
+                    <h2><span>INFORMATION</span></h2>
+                    <div class="info_time">
+                        <div class="time_txt">
+                            <p>운영 시간</p>
+                            <p><span>연중무휴</span> 09&#58;30 &#45; 오후 19&#58;00</p>
+                            <p><span>매표마감</span> 18&#58;00</p>
+                            <p>마감시간은 최소 1시간 전에 이루어지오니<br>이용에 불편 없으시길 바랍니다.</p>
+                        </div>
+                        <div class="time_plus">
+                            <a href="#">
+                                <img src="./img/information_icon_01.png" alt="자세히보기">
+                                <span>자세히보기→</span>
+                                <span>&#43;</span>
+                            </a>
+                            <a href="#">
+                                <img src="./img/information_icon_02.png" alt="오시는길">
+                                <span>오시는 길→</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info_money">
+                        <div class="money_txt">
+                            <p>이용 요금</p>
+                            <p><span>어린이</span> 27,000</p>
+                            <p><span>성인</span> 32,000</p>
+                            <p><span>청소년&#183;경로</span> 29,000</p>
+                        </div>
+                        <div class="money_plus">
+                            <a href="#">
+                                <img src="./img/information_icon_03.png" alt="자세히보기">
+                                <span>자세히보기→</span>
+                                <span>&#43;</span>
+                            </a>
+                            <a href="#">
+                                <img src="./img/information_icon_04.png" alt="티켓구매">
+                                <span>티켓 구매→</span>
+                            </a>
+                            <a href="#">
+                                <img src="./img/information_icon_05.png" alt="단체구매">
+                                <span>단체 구매→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="eve">
+                    <h2><span>EVENT</span></h2>
+                    <div class="evt1">
+                        <div class="eve_txt">
+                            <span>이벤트</span>
+                            <p>특별 이벤트와 통합 이벤트를<br>만나보세요.</p>
+                        </div>
+                        <a href="#">
+                            <img src="./img/event_icon_01_1.png" alt="이벤트">
+                            <span>자세히보기→</span>
+                        </a>
+                    </div>
+                    <div class="evt2">
+                        <div class="eve_txt">
+                            <span>제휴할인</span>
+                            <p>제휴카드, 멤버십 할인 등<br>우대 혜택을 알아보세요.</p>
+                        </div>
+                        <a href="#">
+                            <img src="./img/event_icon_02_1.png" alt="제휴할인">
+                            <span>자세히보기→</span>
+                        </a>
+                    </div>
+                    <div class="evt3">
+                        <div class="eve_txt">
+                            <span>연간이용</span>
+                            <p>365일 매일매일<br>아쿠아플라넷과 함께해요!</p>
+                        </div>
+                        <a href="#">
+                            <img src="./img/event_icon_03_1.png" alt="연간이용">
+                            <span>자세히보기→</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sec2 content">
+            <div class="inner">
+                <h2><span>PROGRAM</span></h2>
+                <ul class="pro_list">
+                    <li>
+                        <img src="./img/program_img_01_1.png" alt="생태설명회">
+                        <a href="#"><span>생태설명회</span></a>
+                    </li>
+                    <li>
+                        <img src="./img/program_img_02_1.png" alt="공연프로그램">
+                        <a href="#"><span>공연 프로그램</span></a>
+                    </li>
+                    <li>
+                        <img src="./img/program_img_03_1.png" alt="체험프로그램">
+                        <a href="#"><span>체험 프로그램</span></a>
+                    </li>
+                </ul>
+                <a href="#">&#43;</a>
+            </div>
+        </section>
+        <section class="sec3 content">
+            <div class="inner">
+                <h2><span>COMMUNITY</span></h2>
+                <div class="sec3_slide_con">
+                    <ul class="commu_list">
+                        <li>
+                            <h3>공지</h3>
+                            <p>[공지]현금 없는 매장 운영</p>
+                            <span>2021.06.13</span>
+                        </li>
+                        <li>
+                            <h3>공지</h3>
+                            <p>[공지]프로그램 운영 시간 안내</p>
+                            <span>2021.06.10</span>
+                        </li>
+                        <li>
+                            <h3>공지</h3>
+                            <p>회사분할에 따른 개인정보 이전 안내</p>
+                            <span>2021.02.24</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="dot_con">
+                    <span class="dot1"></span>
+                    <span class="dot2"></span>
+                    <span class="dot3"></span>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="inner">
+                <div class="ft_menu">
+                    <a href="#">이메일무단수집거부</a>
+                    <a href="#">개인정보처리방침</a>
+                    <a href="#">영상정보처리기기운영·처리방침</a>
+                    <a href="#">이용약관</a>
+                </div>
+                <div class="ft_txt">
+                    <p><span>대표이사 김경수</span>사업자등록번호 624-81-02142</p>
+                    <p><span>대표전화 1833-7001</span>통신판매번호 2015-서울영등포-0907</p>
+                    <p>전라남도 여수시 오동도로 61-11</p>
+                    <p>서울특별시 영등포구 63로 36, 리버타워</p>
+                    <p>Copyright ⓒ Hanwha Hotels & Resorts. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
