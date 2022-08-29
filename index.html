@@ -16,7 +16,7 @@
 
 <body>
     <div class="wrap">
-        <header class="content">
+        <header>
             <video id="video" muted autoplay loop>
                 <source src="./img/bg_01.mp4">
             </video>
@@ -212,72 +212,141 @@
                 </div>
             </div>
         </section>
-        <section class="sec2 content">
+        <section class="sec2">
             <div class="inner">
-                <h2><span>PROGRAM</span></h2>
-                <ul class="pro_list">
-                    <li>
-                        <img src="./img/program_img_01_1.png" alt="생태설명회">
-                        <a href="#"><span>생태설명회</span></a>
-                    </li>
-                    <li>
-                        <img src="./img/program_img_02_1.png" alt="공연프로그램">
-                        <a href="#"><span>공연 프로그램</span></a>
-                    </li>
-                    <li>
-                        <img src="./img/program_img_03_1.png" alt="체험프로그램">
-                        <a href="#"><span>체험 프로그램</span></a>
-                    </li>
-                </ul>
-                <a href="#">&#43;</a>
-            </div>
-        </section>
-        <section class="sec3 content">
-            <div class="inner">
-                <h2><span>COMMUNITY</span></h2>
-                <div class="sec3_slide_con">
-                    <ul class="commu_list">
+                <div class="community">
+                    <h2><span>COMMUNITY</span></h2>
+                    <a class="more" href="#">+</a>
+                    <ul>
                         <li>
-                            <h3>공지</h3>
-                            <p>[공지]현금 없는 매장 운영</p>
+                            <a href="#">[공지]현금 없는 매장 운영</a>
                             <span>2021.06.13</span>
                         </li>
                         <li>
-                            <h3>공지</h3>
-                            <p>[공지]프로그램 운영 시간 안내</p>
+                            <a href="#">[공지]프로그램 운영 시간 안내</a>
                             <span>2021.06.10</span>
                         </li>
                         <li>
-                            <h3>공지</h3>
-                            <p>회사분할에 따른 개인정보 이전 안내</p>
+                            <a href="#">회사분할에 따른 개인정보 이전 안내</a>
                             <span>2021.02.24</span>
                         </li>
                     </ul>
                 </div>
-                <div class="dot_con">
-                    <span class="dot1"></span>
-                    <span class="dot2"></span>
-                    <span class="dot3"></span>
+                <div class="sns">
+                    <h2><span>SNS</span></h2>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="./img/sec2_facebook.png" alt="페이스북">
+                                <p>페이스북<br>바로가기</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/sec2_youtube.png" alt="유튜브">
+                                <p>유튜브<br>바로가기</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="program">
+                    <h2><span>PROGRAM</span></h2>
+                    <ul class="tab_menu">
+                        <li class="on">생태설명회</li>
+                        <li>공연 프로그램</li>
+                        <li>체험 프로그램</li>
+                    </ul>
+                    <div class="tab_list_con">
+                        <div class="list1 on">
+                            <div class="on">
+                                <img src="./img/sec2_program1_1.gif" alt="생태설명회">
+                                <div class="pro_txt">
+                                    <h3>아프리카 펭귄 생태설명회</h3>
+                                    <p>진행시간 : 10시 30분</p>
+                                    <p>소요시간 : 약 10분</p>
+                                    <p>관람장소 : 2F>마린라이프>펭귄 수조</p>
+                                    <p>※유의사항<br>본 프로그램은 내부 사정에 의해, 변경/ 취소될 수 있습니다.</p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="./img/sec2_program1_2.gif" alt="오션라이프 만찬">
+                                <div class="pro_txt">
+                                    <h3>오션라이프 만찬-메인수조 친구들 식사시간</h3>
+                                    <p>진행시간 : 11시20분 / 14시40분</p>
+                                    <p>소요시간 : 약 10분</p>
+                                    <p>관람장소 : 2F>오션라이프>메인수조</p>
+                                    <p>※유의사항<br>본 프로그램은 내부 사정에 의해, 변경/ 취소될 수 있습니다.</p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="./img/sec2_program1_3.gif" alt="참물범&바다사자 간식타임">
+                                <div class="pro_txt">
+                                    <h3>참물범&바다사자 간식타임</h3>
+                                    <p>진행시간 : 13시00분</p>
+                                    <p>소요시간 : 약 10분</p>
+                                    <p>관람장소 : 3F>마린라이프>바다사자 수조</p>
+                                    <p>※유의사항<br><span>동절기(1월~3월)에는 생태설명회는 하지 않고 피딩만 진행합니다.</span><br><span>본 프로그램은 내부 사정에 의해, 변경/ 취소될 수 있습니다.</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list2">
+                            <div>
+                                <img src="./img/sec2_program2_1.png" alt="매직뮤지컬">
+                                <div class="pro_txt">
+                                    <h3>[매직뮤지컬]인어공주 벨루나</h3>
+                                    <p>진행시간 : 12시20분 / 13시20분 / 14시20분 / 15시20분 / 16시20분</p>
+                                    <p>소요시간 : 약 13분</p>
+                                    <p>관람장소 : 2F>오션라이프</p>
+                                    <p>※유의사항<br>월요일에는 일반 마술 공연이 진행됨을 안내 드립니다.</p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="./img/sec2_program2_2.png" alt="매직뮤지컬">
+                                <div class="pro_txt">
+                                    <h3>매직뮤지컬</h3>
+                                    <p>진행시간 : 12시20분 / 13시20분 / 14시20분 / 15시20분 / 16시20분</p>
+                                    <p>소요시간 : 약 15분</p>
+                                    <p>관람장소 : 2F>오션라이프</p>
+                                    <p>※유의사항<br>화요일 부터 일요일까지는 수중 인어가 등장하는 매직 뮤지컬 공연이 진행됩니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list3">
+                            <div>
+                                <img src="./img/sec2_program3_1.jpg" alt="아쿠아x보트">
+                                <div class="pro_txt">
+                                    <h3>아쿠아X보트(유료)</h3>
+                                    <p>운영시간 : 10시00분~18시00분 / 마지막 탑승 18시00분</p>
+                                    <p>이용요금 : 1인 9,000원(대/소 공통)</p>
+                                    <p>탑승위치 : 아쿠아리움2층 매표 후 탑승장 이동</p>
+                                    <p>※유의사항<br>보트탑승은 현장 선착순 예약을 우선으로 하고 있습니다.</p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="./img/sec2_program3_2.png" alt="여행집">
+                                <div class="pro_txt">
+                                    <h3>여행집(여수추억제작소) (유료)</h3>
+                                    <p>운영시간 : 9시30분~18시00분 / 상시운영</p>
+                                    <p>체험비용 : 7,000원~20,000원</p>
+                                    <p>체험장소 : 1F>Fish N Fish (기프트샵) 옆</p>
+                                    <p>※유의사항<br>상세 체험비용은 현장 문의 필요</p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="./img/sec2_program3_3.jpg" alt="캔들만들기">
+                                <div class="pro_txt">
+                                    <h3>캔들만들기 체험 (유료)</h3>
+                                    <p>운영시간 : 10시00분~18시00분 / 상시운영</p>
+                                    <p>소요시간 : 약 15분</p>
+                                    <p>체험장소 : 2F>마린라이프>벨루가 영상관</p>
+                                    <p>※유의사항<br>상세 체험료는 추가되는 재료에 따라 다를 수 있습니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <footer>
-            <div class="inner">
-                <div class="ft_menu">
-                    <a href="#">이메일무단수집거부</a>
-                    <a href="#">개인정보처리방침</a>
-                    <a href="#">영상정보처리기기운영·처리방침</a>
-                    <a href="#">이용약관</a>
-                </div>
-                <div class="ft_txt">
-                    <p><span>대표이사 김경수</span>사업자등록번호 624-81-02142</p>
-                    <p><span>대표전화 1833-7001</span>통신판매번호 2015-서울영등포-0907</p>
-                    <p>전라남도 여수시 오동도로 61-11</p>
-                    <p>서울특별시 영등포구 63로 36, 리버타워</p>
-                    <p>Copyright ⓒ Hanwha Hotels & Resorts. All Rights Reserved.</p>
-                </div>
-            </div>
-        </footer>
     </div>
 </body>
 

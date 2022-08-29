@@ -93,84 +93,54 @@ $(function () {
     $(this).find('img').attr('src', `./img/event_icon_0${nth3}_1.png`)
   })
 
-  // 프로그램 사진 호버
-  $('.pro_list li').on('mouseenter', function () {
-    let nthp = $(this).index() + 1
-    $(this).find('img').attr('src', `./img/program_img_0${nthp}.jpg`)
+  // 프로그램 탭메뉴
+  $('.tab_menu > li').click(function(){
+    let idx = $(this).index('.tab_menu > li')
+    $('.tab_menu > li').removeClass('on')
+    $(this).addClass('on')
+    $('.tab_list_con > div').removeClass('on')
+    $('.tab_list_con > div').eq(idx).addClass('on')
+    $('.tab_list_con > div > div:first-of-type').addClass('on')
   })
-  $('.pro_list li').on('mouseleave', function () {
-    let nthp = $(this).index() + 1
-    $(this).find('img').attr('src', `./img/program_img_0${nthp}_1.png`)
+
+  $('.tab_list_con > div > div').click(function(){
+    $('.tab_list_con > div > div').removeClass('on')
+    $(this).toggleClass('on')
   })
-
-  // 커뮤니티 슬라이드
-
-
-  // breakpoints: {
-  //   1000: {
-  //     slidesPerView: 2,
-  //     spaceBetween: 20,
-  //     clickable: true
-  //   },
-  let slide = setInterval(function () {
-    sldideAni()
-  }, 5000)
-
-  $(window).resize(function () {
-    if ($(window).width() > 1000) {
-      clearInterval(slide)
-    } else {
-      slide = setInterval(function () {
-        sldideAni()
-      }, 5000)
-    }
-  });
-
-  function sldideAni() {
-    $('.commu_list').not(':animated').animate({
-      marginLeft: -100 + '%'
-    }, 500, function () {
-      $('.commu_list li').eq(0).appendTo('.commu_list')
-      $('.commu_list').css({
-        marginLeft: 0
-      })
-    })
-    $('.dot_con span').eq(0).appendTo('.dot_con')
-  }
 
   // 100vh씩
-  window.addEventListener("wheel", function (e) {
-    e.preventDefault();
-  }, {
-    passive: false
-  });
+  // window.addEventListener("wheel", function (e) {
+  //   e.preventDefault();
+  // }, {
+  //   passive: false
+  // });
 
-  var $html = $("html");
-  var page = 1;
-  var lastPage = $(".content").length;
+  // var $html = $("html");
+  // var page = 1;
+  // var lastPage = $(".content").length;
 
-  $html.animate({
-    scrollTop: 0
-  }, 10);
+  // $html.animate({
+  //   scrollTop: 0
+  // }, 10);
 
-  $(window).on("wheel", function (e) {
+  // $(window).on("wheel", function (e) {
 
-    if ($html.is(":animated")) return;
+  //   if ($html.is(":animated")) return;
 
-    if (e.originalEvent.deltaY > 0) {
-      if (page == lastPage) return;
+  //   if (e.originalEvent.deltaY > 0) {
+  //     if (page == lastPage) return;
 
-      page++;
-    } else if (e.originalEvent.deltaY < 0) {
-      if (page == 1) return;
+  //     page++;
+  //   } else if (e.originalEvent.deltaY < 0) {
+  //     if (page == 1) return;
 
-      page--;
-    }
-    var posTop = (page - 1) * $(window).height();
+  //     page--;
+  //   }
+  //   var posTop = (page - 1) * $(window).height();
 
-    $html.animate({
-      scrollTop: posTop
-    });
+  //   $html.animate({
+  //     scrollTop: posTop
+  //   });
 
-  });
+  // });
 })
